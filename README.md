@@ -217,7 +217,7 @@ git push origin feature/branch-name
 
 # 👥 Team
 
-Developed collaboratively by the **Palit Daan** development team.
+Quizana, Louise Daniella V.
 
 ---
 
