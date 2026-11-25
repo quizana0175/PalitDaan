@@ -1,0 +1,259 @@
+.admin-page {
+    display: grid;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #20372a;
+}
+
+.admin-header {
+    padding: 28px 32px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #103b2a, #1b5e3b);
+    color: #fff;
+}
+
+.admin-header h1,
+.admin-header p {
+    margin: 0;
+}
+
+.admin-header h1 {
+    margin: 5px 0 8px;
+    font-size: 2rem;
+}
+
+.admin-eyebrow {
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.admin-section {
+    padding: 24px;
+    border: 1px solid #dce8df;
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0 8px 26px rgba(16, 59, 42, 0.07);
+}
+
+.admin-section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 18px;
+}
+
+.admin-section-heading h2,
+.admin-section-heading p {
+    margin: 0;
+}
+
+.admin-section-heading h2 {
+    color: #103b2a;
+    font-size: 1.35rem;
+}
+
+.admin-section-heading p {
+    margin-top: 5px;
+    color: #607066;
+}
+
+.admin-count {
+    flex-shrink: 0;
+    padding: 7px 12px;
+    border-radius: 999px;
+    background: #e8f1eb;
+    color: #174c35;
+    font-size: 0.85rem;
+    font-weight: 800;
+}
+
+.admin-notice {
+    margin: 0;
+    padding: 12px 16px;
+    border-radius: 10px;
+    background: #e8f1eb;
+    color: #174c35;
+    font-weight: 700;
+}
+
+.admin-notice-error {
+    background: #fbe0e4;
+    color: #a51d35;
+}
+
+.admin-empty {
+    margin: 0;
+    padding: 24px;
+    border-radius: 12px;
+    background: #f3f7f4;
+    color: #607066;
+    text-align: center;
+}
+
+.admin-table-scroll {
+    overflow-x: auto;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #e6eee8;
+    vertical-align: middle;
+}
+
+.admin-table th {
+    background: #e8f1eb;
+    color: #174c35;
+    font-size: 0.84rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.admin-table td small {
+    display: block;
+    margin-top: 4px;
+    color: #758279;
+}
+
+.admin-table select,
+.admin-restock-controls input,
+.admin-add-form input {
+    min-height: 40px;
+    padding: 8px 10px;
+    border: 1px solid #cbd9ce;
+    border-radius: 8px;
+    background: #fff;
+    color: #20372a;
+    font: inherit;
+}
+
+.admin-table select {
+    min-width: 175px;
+}
+
+.admin-inventory-list {
+    display: grid;
+    gap: 10px;
+}
+
+.admin-inventory-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 13px 15px;
+    border-radius: 12px;
+    background: #f3f7f4;
+}
+
+.admin-inventory-row strong,
+.admin-inventory-row span {
+    display: block;
+}
+
+.admin-inventory-row span {
+    margin-top: 4px;
+    color: #607066;
+    font-size: 0.9rem;
+}
+
+.admin-restock-controls {
+    display: flex;
+    gap: 8px;
+}
+
+.admin-restock-controls input {
+    width: 84px;
+}
+
+.admin-restock-controls button,
+.admin-add-button {
+    border: 0;
+    border-radius: 8px;
+    background: #174c35;
+    color: #fff;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.admin-restock-controls button {
+    padding: 8px 14px;
+}
+
+.admin-add-form {
+    margin-top: 26px;
+    padding-top: 22px;
+    border-top: 1px solid #e6eee8;
+}
+
+.admin-add-form h3 {
+    margin: 0 0 16px;
+    color: #103b2a;
+}
+
+.admin-add-fields {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.admin-add-fields label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: #405549;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.admin-add-fields label span {
+    display: inline;
+    color: #758279;
+    font-weight: 400;
+}
+
+.admin-field-wide {
+    grid-column: span 3;
+}
+
+.admin-add-button {
+    margin-top: 16px;
+    padding: 11px 20px;
+}
+
+.admin-add-button:hover,
+.admin-restock-controls button:hover {
+    background: #103b2a;
+}
+
+@media (max-width: 720px) {
+    .admin-section {
+        padding: 18px;
+    }
+
+    .admin-section-heading,
+    .admin-inventory-row {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .admin-add-fields {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-field-wide {
+        grid-column: auto;
+    }
+}
